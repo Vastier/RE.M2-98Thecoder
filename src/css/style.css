@@ -1,0 +1,53 @@
+body{
+	background-color: #c0c0c0;
+	height: 98vh;
+	
+}
+
+.window {
+	height: 98%;
+	position: relative;
+}
+
+
+
+
+.status-bar {
+	position: absolute;
+	bottom: 2%;
+	width: 97%;
+}
+
+
+#message-in {
+	height: 30vh;
+}
+
+#message-out {
+	height: 30vh;
+}
+
+
+#middle {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+#inc {
+	width: 2rem;
+}
+
+
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0; 
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+}
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoder 9.8.SE</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="window" >
+        <div class="title-bar">
+          <div class="title-bar-text">98TheCoder</div>
+    </div>
+    <div class="window-body">
+        <div class="field-row-stacked">
+            <label for="message-in">Texto a ser embaralhado:</label>
+            <textarea id="message-in" rows="1"></textarea>
+            
+            <div id="middle" class="field-row">
+                <select id="cypher">
+                    <option value="caesar">Cifra de César</option>
+                    <option value="base64">Base64</option>
+                </select>
+                
+                <label id='labelinc' for="inc">Inc:
+                    <input id="inc" type="number" name="inc" value="1">
+                </label>
+                
+                <input checked id="encode" type="radio" name="encodeco" value='encode'>
+                <label for="encode">Codificar</label>
+                
+                <input id="decode" type="radio" name="encodeco" value="decode">
+                <label for="decode">Decodificar</label>
+
+                <button id="submit">Codificar Mensagem!</button>
+            </div>
+            
+            <label for="message-out">Texto embaralhado/desembaralhado.</label>
+            <textarea id="message-out" rows="1"></textarea>
+
+        </div>
+        <div class="status-bar">
+            <p class="status-bar-field">Insira seu texto e clique em encodar/decodar... </p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./js/controller/controller.js"></script>
+    <script src="./js/model/model.js"></script>
+    <script src="./js/view/view.js"></script>
+    <script src="./js/main.js"></script>
+    
+</body>
+
+</html>
